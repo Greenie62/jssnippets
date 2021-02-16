@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="search icon" href="#">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+<title>JS Snippets</title>
+</head>
+<body>
+<header>
+    <h1 class='headerone'>JUSTIN'S</h1>
+    <h1 class='headertwo'>JS<i style="left:10px" class='fab fa-js'></i></h1>
+    <h1 class='headerthree'>Pr@ctice</h1>
+</header>
+<pre>find a friend still in progress</pre>
+
+<!-- <a class='regexdiv' href="reg.html">RegEx Page</a> -->
+
+<div class="contentContainer">
+    <div class="actionArea">
+        <div class="buttonRow">
+            <button data-task='phonecall' class="optionBtn">
+                <i style="pointer-events:none" class="fas fa-phone"></i>
+                <p style="pointer-events:none">Make a Call</p>
+            </button>
+            <button data-task='friends' class="optionBtn">
+                <i style="pointer-events:none" class="fas fa-user"></i>
+                <p style="pointer-events:none">Find Friend</p>
+            </button>
+            <button data-task="clear" class="optionBtn">
+                <i style="pointer-events:none" class="fas fa-circle"></i>
+                <p style="pointer-events:none">Clear</p>
+            </button>
+            <button data-task="comments" class="optionBtn">
+                <i style="pointer-events:none" class="fas fa-comment"></i>
+                <p style="pointer-events:none">Send Message</p>
+            </button>
+            <button data-task="search" class="optionBtn">
+                <i style="pointer-events:none" class="fas fa-search"></i>
+                <p style="pointer-events:none">Search</p>
+            </button>
+        </div>
+
+        <div class="messageBox"></div>
+
+        <div class="searchBarDiv"></div>
+    </div>
+    <div class="cellPhoneGui">
+        <div class="phoneScreen"></div>
+        <div class="phoneButtonRow"></div>
+        <div class="optionRow">
+            <div class="icon">
+                <i data-task="phone" class="menuicon fas fa-phone"></i>
+            <div class="alert"></div>
+            </div>
+            <div class="icon">
+                <i data-task="user" class="menuicon fas fa-user"></i>
+            <div class="alert"></div>
+            </div>
+            <div class="icon">
+                <i data-task="clear" class="menuicon fas fa-circle"></i>
+            <div class="alert"></div>
+           </div>
+            <div class="icon">
+                <i data-task="comment" class="menuicon fa fa-comment"></i>
+            <div class="alert"></div>
+            </div>
+            <div class="icon">
+                <i data-task="search" class="menuicon fas fa-search"></i>
+            <div class="alert"></div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<footer>
+    <p>Footer&copy;</p>
+</footer>
+
+<script src="js/alerts.js"></script>
+<script src="js/search.js"></script>
+
+<script src="js/phone.js"></script>
+<script src="js/messages.js"></script>
+<script src='js/script.js'></script>
+
+
+
+<script>
+
+
+
+    let charaacters = [];
+    fetch("process.json")
+    .then(res=>res.json())
+    .then(res=>{
+        console.log(res)
+    })
+</script>
+</body>
+</html>
